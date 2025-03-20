@@ -15,6 +15,10 @@ public class Main {
         Sasuke.aldeia = "Aldeia da folha";
         Sasuke.idade = 18;
 
+        //Aplicando metodos ao meus objetos
+        Sasuke.SharinganAtivado();
+        String chamandoMetodo = Sasuke.EuSouUmNInja();
+
         //Criar ninja Sakura Haruno - Sakura é um objeto
         Ninja Sakura = new Ninja();
         Sakura.nome = "Sakura Haruno";
