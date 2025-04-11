@@ -55,35 +55,45 @@ public class Main {
 //        Hokages Hashirama = new Hokages();
 //
 //
-         // Array são estáticos, não alteram de tamanho
-        String[] ninjasArray = new String[3];
-        ninjasArray[0] = "Naruto";
-        ninjasArray[1] = "Sasuke";
-        ninjasArray[2] = "Sakura";
+//        Array são estáticos, não alteram de tamanho
+//        String[] ninjasArray = new String[3];
+//        ninjasArray[0] = "Naruto";
+//        ninjasArray[1] = "Sasuke";
+//        ninjasArray[2] = "Sakura";
+//
+//        for (int i = 0; i < ninjasArray.length; i++) {
+//            System.out.println("ninjasArray[i] = " + ninjasArray[i]);
+//        }
+//
+//        // Listas não são estaticas, elas podem aumentar ou diminuir
+//        List <String> ninjasList = new ArrayList<>();
+//        ninjasList.add("Naruto Uzumaki"); // Index 0
+//        ninjasList.add("Sasuke Uchiha"); // Index 1
+//        ninjasList.add("Sakura Haruno"); // Index 2
+//        ninjasList.add("Tobirama Senju"); // Index 3
+//        ninjasList.add("Kakashi Hatake"); // Index 4
+//
+//        System.out.println("Ninja List = " + ninjasList);
+//
+//         ninjasList.remove("Kakashi Hatake");
+//         System.out.println("Ninja List = " + ninjasList);
+//
+//         // Trocar Elementos
+//        ninjasList.set(3, "Hashirama Senju");
+//        System.out.println("Ninja List = " + ninjasList);
+//
+//        //Ver o tamanho da lista
+//        ninjasList.size();
+//        System.out.println("Tamanho Lista = " + ninjasList.size() + " elementos");
 
-        for (int i = 0; i < ninjasArray.length; i++) {
-            System.out.println("ninjasArray[i] = " + ninjasArray[i]);
-        }
+        Hokages Hashirama = new Hokages();
+        Hashirama.idade = 45;
 
-        // Listas não são estaticas, elas podem aumentar ou diminuir
-        List <String> ninjasList = new ArrayList<>();
-        ninjasList.add("Naruto Uzumaki"); // Index 0
-        ninjasList.add("Sasuke Uchiha"); // Index 1
-        ninjasList.add("Sakura Haruno"); // Index 2
-        ninjasList.add("Tobirama Senju"); // Index 3
-        ninjasList.add("Kakashi Hatake"); // Index 4
+        Hokages Tobirama = new Hokages("Tobirama Senju");
+        System.out.println(Tobirama.nome);
 
-        System.out.println("Ninja List = " + ninjasList);
+        Hokages Hiruzen = new Hokages(45);
+        System.out.println(Hiruzen.idade);
 
-         ninjasList.remove("Kakashi Hatake");
-         System.out.println("Ninja List = " + ninjasList);
-
-         // Trocar Elementos
-        ninjasList.set(3, "Hashirama Senju");
-        System.out.println("Ninja List = " + ninjasList);
-
-        //Ver o tamanho da lista
-        ninjasList.size();
-        System.out.println("Tamanho Lista = " + ninjasList.size() + " elementos");
     }
 }
